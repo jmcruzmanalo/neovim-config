@@ -35,6 +35,14 @@ vim.keymap.set("n", ";f", function()
 		hidden = true,
 	})
 end)
+
+vim.keymap.set("n", ";F", function()
+	builtin.find_files({
+		no_ignore = true,
+		hidden = true,
+	})
+end)
+
 vim.keymap.set("n", "<C-p>", builtin.git_files, {})
 vim.keymap.set("n", ";r", function()
 	builtin.live_grep()
