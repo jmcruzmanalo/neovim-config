@@ -120,7 +120,7 @@ return packer.startup(function(use)
 
 	-- folding lines of code
 	use({ "kevinhwang91/nvim-ufo", requires = "kevinhwang91/promise-async" })
-	use({ "neoclide/coc.nvim", branch = "release" })
+	--[[ use({ "neoclide/coc.nvim", branch = "release" }) ]]
 
 	-- auto closing
 	use("windwp/nvim-autopairs") -- autoclose parens, brackets, quotes, etc...

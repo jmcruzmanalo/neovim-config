@@ -35,12 +35,17 @@ vim.keymap.set("n", ";f", function()
 		hidden = true,
 	})
 end)
+
 vim.keymap.set("n", ";F", function()
+	builtin.current_buffer_fuzzy_find()
+end, { desc = "Find in current opened file/buffer" })
+
+vim.keymap.set("n", "<leader>fa", function()
 	builtin.find_files({
 		no_ignore = true,
 		hidden = true,
 	})
-end)
+end, { desc = "[F]ind [A]ll with no ignores" })
 
 vim.keymap.set("n", "<leader>fo", function()
 	builtin.oldfiles()
