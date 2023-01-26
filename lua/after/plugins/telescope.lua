@@ -44,7 +44,7 @@ end)
 
 vim.keymap.set("n", "<leader>fo", function()
 	builtin.oldfiles()
-end)
+end, { desc = "test" })
 
 vim.keymap.set("n", "<leader>fs", function()
 	builtin.live_grep()
@@ -61,6 +61,10 @@ end)
 vim.keymap.set("n", "<leader>fh", function()
 	builtin.help_tags()
 end)
+
+vim.keymap.set("n", "<leader>fk", function()
+	builtin.keymaps()
+end, { desc = "[F]ind [K]eymaps" })
 
 vim.keymap.set("n", ";t", function()
 	builtin.help_tags()
