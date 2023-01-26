@@ -35,7 +35,6 @@ vim.keymap.set("n", ";f", function()
 		hidden = true,
 	})
 end)
-
 vim.keymap.set("n", ";F", function()
 	builtin.find_files({
 		no_ignore = true,
@@ -43,19 +42,34 @@ vim.keymap.set("n", ";F", function()
 	})
 end)
 
-vim.keymap.set("n", "<C-p>", builtin.git_files, {})
-vim.keymap.set("n", ";r", function()
+vim.keymap.set("n", "<leader>fo", function()
+	builtin.oldfiles()
+end)
+
+vim.keymap.set("n", "<leader>fs", function()
 	builtin.live_grep()
 end)
-vim.keymap.set("n", "\\\\", function()
+
+vim.keymap.set("n", "<leader>fw", function()
+	builtin.grep_string()
+end)
+
+vim.keymap.set("n", "<leader>fb", function()
 	builtin.buffers()
 end)
+
+vim.keymap.set("n", "<leader>fh", function()
+	builtin.help_tags()
+end)
+
 vim.keymap.set("n", ";t", function()
 	builtin.help_tags()
 end)
+
 vim.keymap.set("n", ";;", function()
 	builtin.resume()
 end)
+
 vim.keymap.set("n", ";e", function()
 	builtin.diagnostics()
 end)
