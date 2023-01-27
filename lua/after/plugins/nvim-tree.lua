@@ -18,7 +18,7 @@ require("nvim-tree").setup({ -- BEGIN_DEFAULT_OPTS
 	remove_keymaps = false,
 	select_prompts = false,
 	view = {
-		adaptive_size = false,
+		adaptive_size = true,
 		centralize_selection = true,
 		cursorline = true,
 		debounce_delay = 15,
