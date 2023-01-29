@@ -50,7 +50,6 @@ opt.signcolumn = "yes" -- show sign column so that text doesn't shift
 opt.winblend = 0
 opt.wildoptions = "pum"
 opt.pumblend = 5
-opt.background = "dark"
 
 -- backspace
 opt.backspace = "indent,eol,start" -- allow backspace on indent, end of line or insert mode start position

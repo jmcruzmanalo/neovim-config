@@ -21,3 +21,5 @@ require("after.plugins.colorizer")
 require("after.plugins.prettier")
 
 vim.opt.guifont = { "Hasklig", ":h17" }
+vim.o.background = "dark"
+vim.cmd([[colorscheme gruvbox]])

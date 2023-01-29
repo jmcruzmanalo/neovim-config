@@ -33,20 +33,6 @@ return packer.startup(function(use)
 
 	use("nvim-lua/plenary.nvim") -- lua functions that many plugins use
 
-	--use("bluz71/vim-nightfly-guicolors") -- preferred colorscheme
-	--[[ use("EdenEast/nightfox.nvim") ]]
-
-	use({
-		"catppuccin/nvim",
-		as = "catppuccin",
-		config = function()
-			vim.cmd("colorscheme catppuccin")
-			require("catppuccin").setup({
-				color_overrides = {},
-			})
-		end,
-	})
-
 	use("christoomey/vim-tmux-navigator") -- tmux & split window navigation
 
 	use("szw/vim-maximizer") -- maximizes and restores current window
@@ -149,6 +135,9 @@ return packer.startup(function(use)
 
 	-- Lazygit
 	use("kdheepak/lazygit.nvim")
+
+	-- Themes
+	use("ellisonleao/gruvbox.nvim")
 
 	if packer_bootstrap then
 		require("packer").sync()
