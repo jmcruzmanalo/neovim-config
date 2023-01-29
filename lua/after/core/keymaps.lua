@@ -29,7 +29,7 @@ keymap.set("n", "<C-a>", "gg<S-v>G")
 -- window management
 keymap.set("n", "<leader>sv", "<C-w>v") -- split window vertically
 keymap.set("n", "<leader>sh", "<C-w>s") -- split window horizontally
-keymap.set("n", "<leader>se", "<C-w>=") -- make split windows equal width & height
+keymap.set("n", "<leader>se", "<C-w>=", { desc = "[S]plit [e]xact - make windows equal" }) -- make split windows equal width & height
 keymap.set("n", "<leader>sx", ":close<CR>") -- close current split window
 
 keymap.set("n", "<leader>to", "<cmd>tabnew<CR>", { desc = "Open a new tab" }) -- open new tab
