@@ -1,7 +1,6 @@
 local opt = vim.opt -- for conciseness
 
 opt.title = true
-opt.hlsearch = true
 opt.backup = false
 opt.cmdheight = 1
 opt.laststatus = 2
@@ -33,6 +32,8 @@ opt.autoindent = true -- copy indent from current line when starting new one
 opt.wrap = false -- disable line wrapping
 
 -- search settings
+opt.hlsearch = true
+opt.incsearch = true
 opt.ignorecase = true -- ignore case when searching
 opt.smartcase = true -- if you include mixed case in your search, assumes you want case-sensitive
 
