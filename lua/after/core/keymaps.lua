@@ -40,6 +40,10 @@ keymap.set("n", "<leader>tp", ":tabp<CR>") --  go to previous tab
 -- Personal
 keymap.set("n", "s", "<cmd>wa<CR>") -- save all
 
+-- Move lines
+keymap.set("v", "K", "<cmd>m '<-2<CR>gv=gv")
+keymap.set("v", "J", "<cmd>m '>+1<CR>gv=gv")
+
 ----------------------
 -- Plugin Keybinds
 ----------------------
