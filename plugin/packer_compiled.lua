@@ -129,6 +129,11 @@ _G.packer_plugins = {
     path = "/Users/jmcruzmanalo/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
   },
+  ["gruvbox-material"] = {
+    loaded = true,
+    path = "/Users/jmcruzmanalo/.local/share/nvim/site/pack/packer/start/gruvbox-material",
+    url = "https://github.com/sainnhe/gruvbox-material"
+  },
   ["gruvbox.nvim"] = {
     loaded = true,
     path = "/Users/jmcruzmanalo/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
@@ -173,6 +178,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/jmcruzmanalo/.local/share/nvim/site/pack/packer/start/mini.nvim",
     url = "https://github.com/echasnovski/mini.nvim"
+  },
+  ["nightfox.nvim"] = {
+    loaded = true,
+    path = "/Users/jmcruzmanalo/.local/share/nvim/site/pack/packer/start/nightfox.nvim",
+    url = "https://github.com/EdenEast/nightfox.nvim"
   },
   ["null-ls.nvim"] = {
     loaded = true,
@@ -257,6 +267,11 @@ _G.packer_plugins = {
     path = "/Users/jmcruzmanalo/.local/share/nvim/site/pack/packer/start/promise-async",
     url = "https://github.com/kevinhwang91/promise-async"
   },
+  sonokai = {
+    loaded = true,
+    path = "/Users/jmcruzmanalo/.local/share/nvim/site/pack/packer/start/sonokai",
+    url = "https://github.com/sainnhe/sonokai"
+  },
   ["telescope-fzf-native.nvim"] = {
     loaded = true,
     path = "/Users/jmcruzmanalo/.local/share/nvim/site/pack/packer/start/telescope-fzf-native.nvim",
@@ -281,6 +296,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/jmcruzmanalo/.local/share/nvim/site/pack/packer/start/vim-maximizer",
     url = "https://github.com/szw/vim-maximizer"
+  },
+  ["vim-moonfly-colors"] = {
+    loaded = true,
+    path = "/Users/jmcruzmanalo/.local/share/nvim/site/pack/packer/start/vim-moonfly-colors",
+    url = "https://github.com/bluz71/vim-moonfly-colors"
   },
   ["vim-surround"] = {
     loaded = true,

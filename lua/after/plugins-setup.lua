@@ -138,6 +138,10 @@ return packer.startup(function(use)
 
 	-- Themes
 	use("ellisonleao/gruvbox.nvim")
+	use("sainnhe/sonokai")
+	use("sainnhe/gruvbox-material")
+	use("EdenEast/nightfox.nvim")
+	use("bluz71/vim-moonfly-colors")
 
 	if packer_bootstrap then
 		require("packer").sync()

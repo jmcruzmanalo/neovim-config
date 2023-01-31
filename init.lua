@@ -22,4 +22,7 @@ require("after.plugins.prettier")
 
 vim.opt.guifont = { "Hasklig", ":h17" }
 vim.o.background = "dark"
-vim.cmd([[colorscheme gruvbox]])
+vim.cmd([[colorscheme moonfly]])
+
+vim.g.neovide_refresh_rate = 100
+vim.g.neovide_refresh_rate_idle = 10
