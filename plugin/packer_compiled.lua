@@ -94,11 +94,6 @@ _G.packer_plugins = {
     path = "/Users/jmcruzmanalo/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
     url = "https://github.com/akinsho/bufferline.nvim"
   },
-  ["cmp-buffer"] = {
-    loaded = true,
-    path = "/Users/jmcruzmanalo/.local/share/nvim/site/pack/packer/start/cmp-buffer",
-    url = "https://github.com/hrsh7th/cmp-buffer"
-  },
   ["cmp-nvim-lsp"] = {
     loaded = true,
     path = "/Users/jmcruzmanalo/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
@@ -114,10 +109,10 @@ _G.packer_plugins = {
     path = "/Users/jmcruzmanalo/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
-  ["friendly-snippets"] = {
+  ["copilot.vim"] = {
     loaded = true,
-    path = "/Users/jmcruzmanalo/.local/share/nvim/site/pack/packer/start/friendly-snippets",
-    url = "https://github.com/rafamadriz/friendly-snippets"
+    path = "/Users/jmcruzmanalo/.local/share/nvim/site/pack/packer/start/copilot.vim",
+    url = "https://github.com/github/copilot.vim"
   },
   ["git.nvim"] = {
     loaded = true,
@@ -133,11 +128,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/jmcruzmanalo/.local/share/nvim/site/pack/packer/start/gruvbox-material",
     url = "https://github.com/sainnhe/gruvbox-material"
-  },
-  ["gruvbox.nvim"] = {
-    loaded = true,
-    path = "/Users/jmcruzmanalo/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
-    url = "https://github.com/ellisonleao/gruvbox.nvim"
   },
   ["lazygit.nvim"] = {
     loaded = true,
@@ -178,11 +168,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/jmcruzmanalo/.local/share/nvim/site/pack/packer/start/mini.nvim",
     url = "https://github.com/echasnovski/mini.nvim"
-  },
-  ["nightfox.nvim"] = {
-    loaded = true,
-    path = "/Users/jmcruzmanalo/.local/share/nvim/site/pack/packer/start/nightfox.nvim",
-    url = "https://github.com/EdenEast/nightfox.nvim"
   },
   ["null-ls.nvim"] = {
     loaded = true,
@@ -267,11 +252,6 @@ _G.packer_plugins = {
     path = "/Users/jmcruzmanalo/.local/share/nvim/site/pack/packer/start/promise-async",
     url = "https://github.com/kevinhwang91/promise-async"
   },
-  sonokai = {
-    loaded = true,
-    path = "/Users/jmcruzmanalo/.local/share/nvim/site/pack/packer/start/sonokai",
-    url = "https://github.com/sainnhe/sonokai"
-  },
   ["telescope-fzf-native.nvim"] = {
     loaded = true,
     path = "/Users/jmcruzmanalo/.local/share/nvim/site/pack/packer/start/telescope-fzf-native.nvim",
@@ -311,6 +291,12 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/jmcruzmanalo/.local/share/nvim/site/pack/packer/start/vim-tmux-navigator",
     url = "https://github.com/christoomey/vim-tmux-navigator"
+  },
+  ["which-key.nvim"] = {
+    config = { "\27LJ\2\nt\0\0\3\0\a\0\0156\0\0\0009\0\1\0+\1\2\0=\1\2\0006\0\0\0009\0\1\0)\1è\3=\1\3\0006\0\4\0'\2\5\0B\0\2\0029\0\6\0004\2\0\0B\0\2\1K\0\1\0\nsetup\14which-key\frequire\15timeoutlen\ftimeout\6o\bvim\0" },
+    loaded = true,
+    path = "/Users/jmcruzmanalo/.local/share/nvim/site/pack/packer/start/which-key.nvim",
+    url = "https://github.com/folke/which-key.nvim"
   }
 }
 
@@ -319,6 +305,10 @@ time([[Defining packer_plugins]], false)
 time([[Config for nvim-surround]], true)
 try_loadstring("\27LJ\2\n?\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\18nvim-surround\frequire\0", "config", "nvim-surround")
 time([[Config for nvim-surround]], false)
+-- Config for: which-key.nvim
+time([[Config for which-key.nvim]], true)
+try_loadstring("\27LJ\2\nt\0\0\3\0\a\0\0156\0\0\0009\0\1\0+\1\2\0=\1\2\0006\0\0\0009\0\1\0)\1è\3=\1\3\0006\0\4\0'\2\5\0B\0\2\0029\0\6\0004\2\0\0B\0\2\1K\0\1\0\nsetup\14which-key\frequire\15timeoutlen\ftimeout\6o\bvim\0", "config", "which-key.nvim")
+time([[Config for which-key.nvim]], false)
 -- Load plugins in order defined by `after`
 time([[Sequenced loading]], true)
 vim.cmd [[ packadd nvim-treesitter ]]

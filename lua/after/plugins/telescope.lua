@@ -16,6 +16,7 @@ local builtin = require("telescope.builtin")
 telescope.setup({
 	-- configure custom mappings
 	defaults = {
+		layout_strategy = "vertical",
 		file_ignore_patterns = { "node_modules", ".git" },
 		mappings = {
 			i = {
@@ -23,7 +24,12 @@ telescope.setup({
 				["<C-j>"] = actions.move_selection_next, -- move to next result
 				["<C-q>"] = actions.send_selected_to_qflist + actions.open_qflist, -- send selected to quickfixlist
 			},
+			n = {
+				["s"] = actions.select_vertical,
+				["t"] = actions.select_tab,
+			},
 		},
+		path_display = { "truncate" },
 	},
 })
 

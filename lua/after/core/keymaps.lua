@@ -39,6 +39,7 @@ keymap.set("n", "<leader>tp", ":tabp<CR>") --  go to previous tab
 
 -- Personal
 keymap.set("n", "s", "<cmd>wa<CR>") -- save all
+keymap.set("n", "E", "$%")
 
 -- Move lines
 keymap.set("v", "K", ":m '<-2<CR>gv=gv")
@@ -65,3 +66,6 @@ keymap.set("n", "<leader>rs", ":LspRestart<CR>") -- mapping to restart lsp if ne
 
 -- LazyGit
 keymap.set("n", "<leader>G", ":LazyGit<CR>")
+
+-- Whichkey
+keymap.set("n", "!", "<cmd>:WhichKey<CR>")
