@@ -49,6 +49,11 @@ keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 -- Plugin Keybinds
 ----------------------
 
+-- Github copilot
+keymap.set("i", "‘", "<Plug>(copilot-next)", { noremap = false })
+keymap.set("i", "“", "<Plug>(copilot-previous)", { noremap = false })
+keymap.set("i", "«", "<Plug>(copilot-suggest)", { noremap = false })
+
 -- vim-maximizer
 keymap.set("n", "<leader>sm", ":MaximizerToggle<CR>") -- toggle split window maximization
 
