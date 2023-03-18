@@ -27,6 +27,7 @@ telescope.setup({
 			n = {
 				["s"] = actions.select_vertical,
 				["t"] = actions.select_tab,
+				["q"] = actions.close,
 			},
 		},
 		path_display = { "truncate" },
@@ -60,6 +61,10 @@ end, { desc = "test" })
 vim.keymap.set("n", "<leader>fs", function()
 	builtin.live_grep()
 end)
+
+vim.keymap.set("n", "<leader>fd", function()
+	builtin.resume()
+end, { desc = "Resume [F]in[d]" })
 
 vim.keymap.set("n", "<leader>fw", function()
 	builtin.grep_string()

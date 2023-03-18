@@ -134,9 +134,6 @@ return packer.startup(function(use)
 		end,
 	})
 
-	-- Discord rich presence
-	use("andweeb/presence.nvim")
-
 	-- Context aware comments?
 	use("JoosepAlviste/nvim-ts-context-commentstring")
 
@@ -160,12 +157,16 @@ return packer.startup(function(use)
 		end,
 	})
 
+	-- Language Client info
+	use("autozimu/LanguageClient-neovim")
+
 	-- Themes
+	use("Mofiqul/vscode.nvim")
 	--[[ use("ellisonleao/gruvbox.nvim") ]]
 	--[[ use("sainnhe/sonokai") ]]
 	use("sainnhe/gruvbox-material")
 	--[[ use("EdenEast/nightfox.nvim") ]]
-	use("bluz71/vim-moonfly-colors")
+	--[[ use("bluz71/vim-moonfly-colors") ]]
 
 	if packer_bootstrap then
 		require("packer").sync()

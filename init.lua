@@ -20,8 +20,9 @@ require("after.plugins.bufferline")
 require("after.plugins.colorizer")
 require("after.plugins.prettier")
 
-vim.opt.guifont = { "Hasklig", ":h17" }
+vim.opt.guifont = { "JetBrains Mono", ":h17" }
 vim.o.background = "dark"
+
 vim.cmd([[colorscheme gruvbox-material]])
 
 vim.g.neovide_refresh_rate = 120
