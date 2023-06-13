@@ -29,7 +29,7 @@ mason_lspconfig.setup({
 		"lua_ls",
 		"emmet_ls",
 		"astro",
-		"eslint_d",
+		"eslint",
 		"prismals",
 	},
 	-- auto-install configured servers (with lspconfig)

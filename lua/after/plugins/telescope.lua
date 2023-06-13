@@ -38,18 +38,18 @@ telescope.load_extension("fzf")
 
 vim.keymap.set("n", ";f", function()
 	builtin.find_files({
-		no_ignore = false,
+		no_ignore = true,
 		hidden = true,
 	})
 end)
 
-vim.keymap.set("n", ";F", function()
+vim.keymap.set("n", "fA", function()
 	builtin.current_buffer_fuzzy_find()
 end, { desc = "Find in current opened file/buffer" })
 
 vim.keymap.set("n", "<leader>fa", function()
 	builtin.find_files({
-		no_ignore = true,
+		no_ignore = false,
 		hidden = true,
 	})
 end, { desc = "[F]ind [A]ll with no ignores" })
@@ -60,6 +60,12 @@ end, { desc = "test" })
 
 vim.keymap.set("n", "<leader>fs", function()
 	builtin.live_grep()
+end)
+
+vim.keymap.set("n", "<leader>fS", function()
+	builtin.live_grep({
+		glob_pattern = { "/**", "!node_modules/**" },
+	})
 end)
 
 vim.keymap.set("n", "<leader>fd", function()
